@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:background="@drawable/angryimg_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:padding="8dp">
+            <TextView
+                android:textAlignment="center"
+                android:textColor="@color/fbutton_color_wet_asphalt"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Recipe Update"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/fbutton_color_wet_asphalt"
+            android:textColorHint="#131313"
+            android:background="@color/text_shadow_white"
+           app:boxCornerRadiusTopStart="7dp"
+            app:boxCornerRadiusTopEnd="7dp"
+            app:boxCollapsedPaddingTop="7dp"
+            app:boxCornerRadiusBottomEnd="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+            <EditText
+                android:textStyle="bold"
+                android:id="@+id/recipe_name_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Name:"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/fbutton_color_wet_asphalt"
+            android:textColorHint="#131313"
+            android:background="@color/text_shadow_white"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+            <EditText
+                android:textStyle="bold"
+                android:id="@+id/recipe_quantity_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Quantity:"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/fbutton_color_wet_asphalt"
+            android:textColorHint="#131313"
+            android:background="@color/text_shadow_white"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+            <EditText
+                android:textStyle="bold"
+                android:id="@+id/recipe_price_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Price:"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/text_shadow_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <info.hoang8f.widget.FButton
+                android:id="@+id/recipe_Update_dataSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Update"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/recipe_alert_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Exite"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

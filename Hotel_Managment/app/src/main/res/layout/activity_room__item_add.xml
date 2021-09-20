@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_ItemAdd">
+    <LinearLayout
+        android:background="@drawable/room2"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Rate Setup"
+            android:textSize="25dp"
+            android:textColor="@color/fbutton_color_sun_flower"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/text_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:background="#ffff"
+            android:text="Current Data"
+            android:textColor="#0C0B0C"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+
+                android:layout_gravity="center"
+                android:id="@+id/room_addImage"/>
+
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/text_shadow_white"
+            android:textColorHint="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="#EAE5E8"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:textColor="#ffff"
+                android:id="@+id/room_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room No"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/text_shadow_white"
+            app:boxStrokeColor="#EAE5E8"
+            android:textColorHint="#ffff"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/room_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room  Ac/NonAc"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/text_shadow_white"
+            app:boxStrokeColor="#EAE5E8"
+            android:textColorHint="#ffff"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/bad_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bad Type"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/text_shadow_white"
+            app:boxStrokeColor="#EAE5E8"
+            android:textColorHint="#ffff"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/room_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bad Rate"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <info.hoang8f.widget.FButton
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Save"
+            android:onClick="room_seveData"/>
+
+        <info.hoang8f.widget.FButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Select Image"
+            android:onClick="roomAdd_chooseImag"/>
+    </LinearLayout>
+
+
+</ScrollView>

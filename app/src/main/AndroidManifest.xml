@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hotel_managment">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Map_restaurant_test"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".Maps_restaurant"
+            android:label="@string/title_activity_maps_restaurant" />
+        <activity android:name=".Sign_UpPage" />
+        <activity android:name=".payment_Customar_checkOut" />
+        <activity android:name=".order_status" />
+        <activity android:name=".User_leve_cheeck_inRoomShow" />
+        <activity android:name=".Room_Data_Update" />
+        <activity android:name=".Recipe_RateShow" />
+        <activity android:name=".Room_ItemAdd" />
+        <activity android:name=".Recipe_payment_ShowList" />
+        <activity android:name=".User_ReservationLeval" />
+        <activity android:name=".User_informatio_show" />
+        <activity android:name=".Recepic_card" />
+        <activity
+        android:name=".Recipe_Made_details"
+       android:label="@string/title_activity_recipe__made_details" />
+        <activity android:name=".Main_RestaurantPage" />
+        <activity android:name=".Room_RateShow" />
+        <activity android:name=".Home_page" />
+        <activity android:name=".Amdin_deatils" />
+        <activity android:name=".Reservation_room" />
+        <activity android:name=".Custom_checkOut" />
+        <activity android:name=".Cheeck_inRoomShow" />
+        <activity android:name=".Recipe_category" />
+        <activity android:name=".MyviewPager" />
+        <activity android:name=".Image_Slider" />
+        <activity android:name=".User_level_recipeShow" />
+        <activity android:name=".Recipe_Upload" />
+        <activity android:name=".Log_inPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

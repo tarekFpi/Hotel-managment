@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp"
+    android:elevation="12dp"
+    app:cardCornerRadius="12dp"
+    tools:context=".Room_Data_Update">
+    <ScrollView
+        android:background="@drawable/angryimg_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/relative_up"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                app:iss_auto_cycle="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/restaurant"
+                android:id="@+id/room_up_Image"/>
+
+            <TextView
+                android:textColor="#171716"
+                android:layout_below="@id/room_up_Image"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room NO :"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/room_update_id"/>
+            <TextView
+                android:textColor="#171716"
+                android:layout_below="@id/room_update_id"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Type :"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/room_type_update"/>
+
+            <TextView
+                android:textColor="#171716"
+                android:layout_below="@+id/room_type_update"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bad Type:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/bad_type_update"/>
+
+
+            <TextView
+                android:textColor="#E4D86B"
+                android:layout_alignBaseline="@id/bad_type_update"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room price:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/room_rate_update"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/editLyout"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/room_rate_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:padding="8dp">
+                    <TextView
+                        android:textAlignment="center"
+                        android:textColor="@color/fbutton_color_wet_asphalt"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Room Information Update"/>
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextColor="@color/text_shadow_white"
+                    android:textColorHint="@color/text_shadow_white"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textStyle="bold"
+                        android:textColorHint="@color/text_shadow_white"
+                        android:id="@+id/edi__rmType"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_shadow_white"
+                        android:layout_width="match_parent"
+                        android:hint="Room Type"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextColor="@color/text_shadow_white"
+                    android:textColorHint="@color/text_shadow_white"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textStyle="bold"
+                        android:id="@+id/edit_badType"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_shadow_white"
+                        android:layout_width="match_parent"
+                        android:hint="Bad Type:"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextColor="@color/text_shadow_white"
+                    android:textColorHint="@color/text_shadow_white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_room_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Room Price"
+                        android:textColor="@color/text_shadow_white"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <info.hoang8f.widget.FButton
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/text_shadow_white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="Update_dataSet"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/room_rate_update"
+                android:id="@+id/booking_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipe_show_deatils"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Date:"
+                android:textColor="#3700FF"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_margin="10dp"
+                android:layout_below="@+id/editLyout"
+                android:onClick="floating_recipe_rateShowPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:src="@drawable/cloud_upload"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

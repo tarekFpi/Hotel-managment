@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="15dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@drawable/angryimg_3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/text_shadow"
+                app:civ_border_color="@color/text_shadow_white"
+                android:background="@drawable/angryimg_3"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/CheckOut_show_cut_Image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/room2"/>
+            <TextView
+                android:layout_below="@+id/CheckOut_show_cut_Image"
+                android:textColor="#0E0E0E"
+                android:id="@+id/checkOut_show_Room_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Room NO:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_below="@+id/checkOut_show_Room_no"
+                android:textColor="@color/text_shadow_white"
+                android:id="@+id/checkOut_show_Roomtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Room Type:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/checkOut_show_Badtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkOut_show_Roomtype"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Bad Type:"
+                android:textColor="@color/text_shadow_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/checkOut_show_Badtype"
+                android:textColor="#570768"
+                android:id="@+id/checkOut_show_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Room Price:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/checkOut_show_price"
+                android:textColor="@color/text_shadow_white"
+                android:id="@+id/checkOut_show_Cust_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Name:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/checkOut_show_Cust_name"
+                android:textColor="@color/text_shadow_white"
+                android:id="@+id/CheckOut_show_Cust_Deatils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Deatils:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/CheckOut_show_Cust_Deatils"
+                android:textColor="@color/text_shadow_white"
+                android:id="@+id/checkOut_show_Nid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="NID Number:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/checkOut_show_Nid"
+                android:textColor="@color/text_shadow_white"
+                android:id="@+id/checkOut_show_phon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Phon Number:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_alignBaseline="@id/checkOut_show_Roomtype"
+                android:textColor="#E4169F"
+                android:id="@+id/status_show_check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="Check Out Room"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/checkOut_show_phon"
+                android:textColor="#fff0"
+                android:id="@+id/check_in_show_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Date :"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+
+                android:layout_below="@+id/check_in_show_Date"
+                android:textStyle="bold"
+                android:textColor="@color/text_shadow_white"
+                android:layout_marginTop="5dp"
+                android:id="@+id/check_out_show_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Check Out Date"/>
+
+            <TextView
+               android:layout_marginRight="8dp"
+                android:textColor="#FF8F00"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/check_out_show_Date"
+                android:textColorHint="#FF8F00"
+                android:layout_marginTop="15dp"
+                android:id="@+id/check_outTotal_show_Price"
+                android:hint="Total price:"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginRight="8dp"
+                android:padding="3dp"
+                android:background="@color/text_shadow_white"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/check_outTotal_show_Price"
+                android:textColor="@color/material_on_background_emphasis_high_type"
+                android:layout_marginTop="10dp"
+                android:id="@+id/check_out_totalDay"
+                android:hint="Total Day:"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

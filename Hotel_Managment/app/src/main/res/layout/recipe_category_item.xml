@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+      <TextView
+          android:textStyle="bold"
+          android:id="@+id/recipe_cate_id"
+          android:textSize="16sp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Recipe Id:"/>
+
+      <TextView
+          android:layout_below="@+id/recipe_cate_id"
+          android:textStyle="bold"
+          android:id="@+id/recipe_cate_name"
+          android:textSize="16sp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Recipe Name:"/>
+
+      <TextView
+          android:layout_below="@+id/recipe_cate_name"
+          android:textStyle="bold"
+          android:id="@+id/recipe_cate_date"
+          android:textSize="16sp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Expite Date:"/>
+
+      <TextView
+          android:layout_below="@+id/recipe_cate_date"
+          android:textStyle="bold"
+          android:id="@+id/recipe_cate_quantity"
+          android:textSize="16sp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Recipe Quantity:"/>
+
+
+
+      <TextView
+          android:layout_below="@+id/recipe_cate_quantity"
+          android:textColor="#682626"
+          android:textStyle="bold"
+          android:id="@+id/recipe_cate_total"
+          android:textSize="20sp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Total Price:"/>
+
+
+      <TextView
+          android:layout_below="@+id/recipe_cate_total"
+          android:textStyle="bold"
+          android:textSize="16sp"
+          android:id="@+id/user_room_id"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Room NO:"/>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

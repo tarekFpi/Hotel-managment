@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/angryimg_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <RelativeLayout
+        android:padding="5dp"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              app:civ_border_width="2dp"
+              app:civ_border_color="@color/text_shadow_white"
+              android:background="@color/fbutton_color_clouds"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="70dp"
+              android:id="@+id/pay_deatils_custImage"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="center"
+              android:layout_width="64dp"
+              android:layout_height="64dp"
+              android:src="@drawable/ic_image_search"/>
+          <TextView
+              android:textColor="@color/text_shadow_white"
+              android:layout_below="@+id/pay_deatils_custImage"
+              android:padding="5dp"
+              android:id="@+id/pay_deatils_roomId"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Room No:"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+          <TextView
+              android:textColor="@color/text_shadow_white"
+              android:layout_below="@+id/pay_deatils_roomId"
+              android:padding="5dp"
+              android:id="@+id/pay_deatils_recipeCustName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customar Name:"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:textColor="@color/text_shadow_white"
+              android:layout_below="@+id/pay_deatils_recipeCustName"
+              android:padding="5dp"
+              android:layout_marginTop="15dp"
+              android:id="@+id/pay_details_Cust_phon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Phon Number:"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+
+          <TextView
+              android:textColor="@color/text_shadow_white"
+              android:layout_below="@+id/pay_details_Cust_phon"
+              android:padding="5dp"
+              android:layout_marginTop="15dp"
+              android:id="@+id/order_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Recipe Order"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:layout_below="@+id/order_item"
+              android:layout_marginBottom="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_alignParentRight="true"
+              android:background="@color/text_shadow_white"
+              android:textColor="#EF009F"
+              android:padding="3dp"
+              android:layout_marginTop="10dp"
+              android:id="@+id/pay_deatils_recipe_total"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Total price:"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+
+
+
+          <TextView
+              android:layout_marginBottom="5dp"
+            android:layout_below="@+id/pay_deatils_recipe_total"
+
+              android:layout_marginTop="10dp"
+              android:id="@+id/recipe_deails_delivary_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/text_shadow_white"
+              android:text="Delivary Data"
+              android:textColor="#478819"
+              android:textSize="15dp"
+              android:textStyle="bold" />
+
+      </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

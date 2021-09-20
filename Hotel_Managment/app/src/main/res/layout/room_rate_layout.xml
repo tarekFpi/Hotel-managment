@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:gravity="center"
+       android:padding="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <androidx.cardview.widget.CardView
+           app:cardElevation="12dp"
+           android:elevation="10dp"
+           app:cardCornerRadius="8dp"
+           android:layout_width="match_parent"
+           android:layout_height="185dp">
+           <ImageView
+               android:id="@+id/room_rateImage"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/romm"
+               android:scaleType="fitXY"
+               />
+       </androidx.cardview.widget.CardView>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_marginLeft="10dp"
+                  android:id="@+id/text_badType"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="Single Room"
+                  android:textSize="24sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_marginLeft="4dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_below="@+id/text_badType"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:text="Room Type"
+                  android:textStyle="bold"
+                  android:padding="3dp"
+                  android:id="@+id/text_roomtype"/>
+
+              <TextView
+                  android:layout_marginLeft="5dp"
+                  android:layout_below="@+id/text_roomtype"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:text="Cheeck out"
+                  android:textStyle="bold"
+                  android:padding="3dp"
+                  android:id="@+id/text_cheeckOut"/>
+
+              <TextView
+                android:layout_alignBaseline="@id/text_cheeckOut"
+                  android:layout_marginRight="20dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginLeft="6dp"
+                  android:id="@+id/text_room_rate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/text_cheeckOut"
+                  android:text="Rate:"
+                  android:textColor="#ED3BBB"
+                  android:textSize="22sp"
+                  android:textStyle="bold" />
+          </RelativeLayout>
+
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

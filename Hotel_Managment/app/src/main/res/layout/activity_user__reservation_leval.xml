@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:context=".User_ReservationLeval">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/User_card_search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:elevation="12dp">
+        <EditText
+            android:drawableLeft="@drawable/ic_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Search Your Room Type"
+            android:textSize="18sp"
+            android:id="@+id/User_edit_search"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/User_card_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/User_recycler_room"/>
+
+</RelativeLayout>

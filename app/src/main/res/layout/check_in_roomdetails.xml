@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/angryimg_back"
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:background="@drawable/angryimg_3"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/text_shadow"
+        app:civ_border_color="@color/text_shadow_white"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/chin_roomImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/room2"/>
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:layout_below="@+id/chin_roomImage"
+            android:id="@+id/check_inRoom_NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Room No:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/Check_inRoomtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_inRoom_NO"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Room Type:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/Check_inBadtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Check_inRoomtype"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Bad Type:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/Check_in_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Check_inBadtype"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Room Price:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/Cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Check_in_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Name:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/Cust_Deatils"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cust_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Deatils:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/cust_NadCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cust_Deatils"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="NAD Number:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/cust_phon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_NadCard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Phon Number:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/text_shadow_white"
+            android:id="@+id/check_inId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_phon"
+            android:layout_alignBaseline="@id/Cust_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Check IN Room"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="#5EDD1A"
+            android:id="@+id/cust_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cust_phon"
+            android:padding="6dp"
+            android:text="Date :"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

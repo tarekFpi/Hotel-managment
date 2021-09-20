@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    tools:context=".Recepic_card">
+
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+           android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:padding="8dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/fbutton_color_pomegranate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe payment Show"/>
+            </androidx.cardview.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="@color/text_shadow_white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:id="@+id/pay_custImage"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_image_search"/>
+
+            <Spinner
+                android:textDirection="ltr"
+                android:id="@+id/auto_spnner_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pay_custImage"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/text_shadow_white"
+                android:drawableLeft="@drawable/ic_baseline_search"
+                android:hint="Room id"
+                android:padding="5dp" />
+
+                <TextView
+                    android:textColor="@color/text_shadow_white"
+                    android:layout_below="@+id/auto_spnner_id"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pay_recipeCustName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customar Name:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/text_shadow_white"
+                    android:layout_below="@+id/pay_recipeCustName"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pay_recipeCust_phon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phon Number:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textColor="@color/text_shadow_white"
+                    android:layout_below="@+id/pay_recipeCust_phon"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pay_recipe_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Room Id"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/text_shadow_white"
+                    android:layout_below="@+id/pay_recipe_Id"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pay_recipe_allOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Order:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:background="@color/text_shadow_white"
+                    android:layout_below="@+id/pay_recipe_allOrder"
+                    android:textColor="#FF0084"
+                    android:padding="3dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/pay_recipe_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total price:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+  <LinearLayout
+      android:layout_marginTop="10dp"
+     android:id="@+id/date_layout"
+    android:layout_below="@+id/pay_recipe_total"
+    android:padding="7dp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:background="@color/text_shadow_white"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_baseline_clock"/>
+
+      <TextView
+          android:id="@+id/recipe_Delivary_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="20dp"
+          android:background="@color/text_shadow_white"
+          android:text="Delivary Data"
+          android:textColor="#478819"
+          android:textSize="18dp"
+          android:textStyle="bold" />
+  </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/text_shadow_white"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/date_layout"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:textColor="@color/fbutton_color_wet_asphalt"
+                android:layout_margin="10dp"
+                android:onClick="Selling_dataSave"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Save" />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
